@@ -50,6 +50,9 @@ main{
     flex-wrap: wrap;
  }
 
+img{
+    height: 100%;
+}
 .main-top{
    position:relative;
 }
