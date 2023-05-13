@@ -20,42 +20,57 @@ body{
      DEBUG
 */
 
-.debug{
-     border:2px dashed black;
-}
-
-.debug main{
-    background-color: brown;
-}
-
 .debug footer{
     background-color: aqua;
 }
 
+.container{
+    position: relative;
+    
+}
+/* .debug .col-1-7 {
+    background-color: lightcoral;
+    text-align: center;
+    padding: 50px 10px;
+    border: 5px solid pink
+} */
+/*
+   HEADER
+*/
 
+
+.header-top{
+    position:relative;
+ }
+ 
 /*
   MAIN
 */
+
 main{
     height:calc(100vh - 100px);
   }
- 
 
- footer{
-    height: 100px;
- }
-
- .my-row {
+.my-row {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 80px;
+    margin-left: 70px;
+    margin-right: 70px;
  }
 
-img{
-    height: 100%;
+.col-1-7{
+    width: calc(100% / 7);
+    padding: 3px;
+} 
+
+.container img{
+    width: 100%;
 }
-.main-top{
-   position:relative;
-}
+/* 
+   BUTTON-HEADER
+
+*/
 
 .container-button{
     position: absolute;
@@ -69,15 +84,24 @@ img{
     border-radius: 10px;  
     color:white;
     padding:5px;
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 .speaker-view{
     padding-right: 5px;
 }
 
-.col-1-7{
+/* .col-1-7{
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
+} */
 
-}
+/*
+  FOOTER
+*/
+
+footer{
+    height: 100px;
+ }
