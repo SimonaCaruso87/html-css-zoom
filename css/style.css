@@ -26,6 +26,9 @@ body{
 
 .container{
     position: relative;
+    padding-top: 100px;
+    padding-left: 50px;
+
     
 }
 /* .debug .col-1-7 {
@@ -34,18 +37,14 @@ body{
     padding: 50px 10px;
     border: 5px solid pink
 } */
-/*
-   HEADER
-*/
 
-
-.header-top{
-    position:relative;
- }
- 
 /*
   MAIN
 */
+
+.main-top{
+    position:relative;
+ }
 
 main{
     height:calc(100vh - 100px);
@@ -54,21 +53,27 @@ main{
 .my-row {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 80px;
-    margin-left: 70px;
-    margin-right: 70px;
+    width: 95%;
+    margin:0 auto;
  }
 
-.col-1-7{
-    width: calc(100% / 7);
-    padding: 3px;
+.my-row > div{
+    width: calc((100% / 7) - 42px);
+    height: 100px;
+    margin: 3px;
+    background-image: url(https://picsum.photos/id/656/600/400);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: blueviolet;
 } 
+
 
 .container img{
     width: 100%;
 }
 /* 
-   BUTTON-HEADER
+   BUTTON-MAIN
 
 */
 
@@ -92,11 +97,6 @@ main{
     padding-right: 5px;
 }
 
-/* .col-1-7{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-} */
 
 /*
   FOOTER
@@ -104,4 +104,46 @@ main{
 
 footer{
     height: 100px;
+    background-color: #36404B;
+    position:relative;
  }
+
+.button-footer{
+    width: 100px;
+}
+
+.microphone-slash{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    display: block;
+}
+.video{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 80px;
+}
+
+.text-button-footer{
+    font-size: 10px;
+    display: block;
+    margin: 10px;
+    padding-top: 5px;
+    text-align: center;
+    
+}
+
+
+
+/* footer > .button-footer-2{
+    background-color: blue;
+    width: 100px;
+    border:1px solid black;
+} */
+
