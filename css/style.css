@@ -116,8 +116,9 @@ footer{
     text-align: center;
     font-size: 18px;
     color: white;
-    margin: 10px;
     display: block;
+    margin-top: 10px;
+
 }
 .video{
     text-align: center;
@@ -134,7 +135,6 @@ footer{
     font-size: 10px;
     display: block;
     margin: 10px;
-    padding-top: 5px;
     text-align: center;
     
 }
