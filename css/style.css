@@ -52,14 +52,12 @@ main .container {
     justify-content:center;
  }
 
+ /* sarebbe meglio dare una grandezza px 
+ non in percentuale */
 main .container > * {
-    width: calc(100% / 8);
+    width: 250px;
     height: 150px;
     margin: 5px;
-    background-image: url(https://picsum.photos/id/656/300/150);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: blueviolet;
     position: relative;
 } 
@@ -72,7 +70,12 @@ main .container > * > span {
     display: inline-block;
     padding: 5px;
 } 
-
+main .container > * > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 .container img{
