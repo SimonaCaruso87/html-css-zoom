@@ -13,6 +13,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    color:white;
     background-color: black;
 }
 
@@ -20,23 +21,10 @@ body{
      DEBUG
 */
 
-.debug footer{
+.debug footer > div {
     background-color: aqua;
+    border: 1px dashed blue;
 }
-
-.container{
-    position: relative;
-    padding-top: 100px;
-    padding-left: 50px;
-
-    
-}
-/* .debug .col-1-7 {
-    background-color: lightcoral;
-    text-align: center;
-    padding: 50px 10px;
-    border: 5px solid pink
-} */
 
 /*
   HEADER
@@ -46,33 +34,45 @@ header{
     height: 30px;
     text-align: right;
     padding: 3px;
-    background: black;
 }
-.main-top{
-    position:relative;
- }
+ /*
+   MAIN
+*/
 
 main{
     height:calc(100vh - 130px);
+    margin:5px;
+    overflow-y: auto;
+    padding: 3px;
   }
 
-.my-row {
+main .container {
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
-    margin:0 auto;
+    justify-content:center;
  }
 
-.my-row > div{
-    width: calc((100% / 7) - 42px);
-    height: 100px;
-    margin: 3px;
-    background-image: url(https://picsum.photos/id/656/600/400);
+main .container > * {
+    width: calc(100% / 8);
+    height: 150px;
+    margin: 5px;
+    background-image: url(https://picsum.photos/id/656/300/150);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: blueviolet;
+    position: relative;
 } 
+
+main .container > * > span {
+    position: absolute;
+    bottom:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 5px;
+} 
+
 
 
 .container img{
@@ -83,11 +83,9 @@ main{
 
 */
 
-.container-button{
-   
-
-        
-}
+.main-top{
+    position:relative;
+ }
 
 .container-button button{
     background-color: #4A4A4A;
@@ -101,34 +99,65 @@ main{
     padding-right: 5px;
 }
 
+/*
+    BUTTON MAIN
+*/
+
+
 
 /*
   FOOTER
 */
 footer{
-    width: 100%;
     height: 100px;
-    background-color: #36404B;
-    border:1px solid pink;  
-    display: flex;  
-    
+    background-color: #222;  
+    display: flex;
+    justify-content: space-between;  
  }
 
-.text-button-footer{
+footer > .right{
+    color: red;
+    padding: 10px;
+    background-color: #4A4A4A;
+    text-align: center;
+}
+
+footer button{
+    height: 100px;
+    vertical-align: middle;
+    background: none;
+    color: white;
+    border: none;
+    padding: 10px;
+ }
+
+ /* i fratelli di div i dentro 
+ i bottoni devono avere */
+
+ footer button > i + div {
+    margin-top: 5px;
+ }
+
+/* .text-button-footer{
     font-size: 10px;
-}
+} */
 
-.button-footer{
-    flex-wrap:wrap;
+/* .button-footer{
+    height: 100%;
     border:1px dashed black;
-}
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+} */
 
-.microphone-slash{
+/* .microphone-slash{
     
     text-align: center;
-}
+} */
 
-.video{
+/* .video{
     
     text-align: center;
-}
+} */
